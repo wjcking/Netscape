@@ -1,0 +1,19 @@
+E:\项目\未分类\NWebCrawler\bin\NWebCrawlerLib.exe
+E:\项目\未分类\NWebCrawler\bin\NWebCrawlerLib.pdb
+E:\项目\未分类\NWebCrawler\src\NWebCrawlerLib\obj\Debug\ResolveAssemblyReference.cache
+E:\项目\未分类\NWebCrawler\src\NWebCrawlerLib\obj\Debug\NWebCrawlerLib.exe
+E:\项目\未分类\NWebCrawler\src\NWebCrawlerLib\obj\Debug\NWebCrawlerLib.pdb
+E:\项目\未分类\NWebCrawler\src\bin\NWebCrawlerLib.exe
+E:\项目\未分类\NWebCrawler\src\bin\NWebCrawlerLib.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\NWebCrawler\bin\NWebCrawlerLib.exe
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\NWebCrawler\bin\NWebCrawlerLib.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\NWebCrawler\NWebCrawlerLib\obj\Debug\NWebCrawlerLib.exe
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\NWebCrawler\NWebCrawlerLib\obj\Debug\NWebCrawlerLib.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\NWebCrawler\bin\NWebCrawlerLib.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\NWebCrawler\NWebCrawlerLib\obj\Debug\NWebCrawlerLib.csprojResolveAssemblyReference.cache
+E:\公司项目\Projects2013\NWebCrawler\bin\NWebCrawlerLib.exe.config
+E:\公司项目\Projects2013\NWebCrawler\bin\NWebCrawlerLib.exe
+E:\公司项目\Projects2013\NWebCrawler\bin\NWebCrawlerLib.pdb
+E:\公司项目\Projects2013\NWebCrawler\NWebCrawlerLib\obj\Debug\NWebCrawlerLib.exe
+E:\公司项目\Projects2013\NWebCrawler\NWebCrawlerLib\obj\Debug\NWebCrawlerLib.pdb
+E:\公司项目\Projects2013\NWebCrawler\NWebCrawlerLib\obj\Debug\NWebCrawlerLib.csprojResolveAssemblyReference.cache

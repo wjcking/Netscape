@@ -1,0 +1,89 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+    <title></title>
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script src="mcate.js" type="text/javascript"></script>
+    <script src="json2.js" type="text/javascript"></script>
+    <link href="netpage.css" rel="stylesheet" type="text/css" />
+ <style type="text/css">
+     #tbc td {
+         vertical-align:middle;
+     }
+ </style>
+</head>
+<body>
+    <form id="form1"  >
+        <br />
+        <div style="padding: 5px 5px 5px 5px; ;" id="divKssOffice">
+            <div id="divTitle" class="testimonial">
+                《金速探索》本产品为免费软件，有了您的<a href="http://www.easyfound.com.cn" target="_blank">支持</a>我们才会做的更好
+                如有个人需求、意见改进、软件bug等问题，请给我们<a href="http://www.easyfound.com.cn/msgboard.aspx" target="_blank">留言</a>
+                <br />以下是快速新建任务，1) 输入网站, 2) 新建任务到左侧任务栏, 3) 双击任务开始探索 。
+            </div>
+            <div class="testimonial" id="divBody" style="overflow-y: auto">
+                <table id="">
+                    <thead>
+
+                    </thead>
+                    <tbody id="tbc"></tbody>
+                </table>
+                <br/>
+                <p style="color:blue;">
+             1)   声明：所有探索到的资源均与该系统无关，
+                我们只不过是资源的搬运工（浏览或下载的另一种形式）
+                如引起法律责任全部由使用者承担 。<br/>
+             2) 如果想要更精确的提取网络资源，请自行设置任务细节(地址关键字、内容关键字)
+                </p>
+
+                <div id="divKeyword"></div>
+             
+            </div>
+
+        </div>
+    </form>
+ 
+    <script type="text/javascript" src="http://localhost/request/param.aspx?type=ad"> </script>
+    <script type="text/javascript" src="http://www.easyfound.com.cn/request/param.aspx?type=ad"> </script>
+    <script type="text/javascript">
+        document.oncontextmenu = new Function('event.returnValue=false');
+       // document.onselectstart = new Function('event.returnValue=false;');
+        
+        $("img").css("cursor", "hand");
+        $("#btnSubmit").click(function () {
+            var userName = $("#txtUserName").val()
+            var message = $("#txtMsg").val()
+            window.external.postMessage(userName, message);
+        });
+
+        var cateHtm = new String("");
+        var jsonTask = {
+            EntranceURL: "",
+            Category: "",
+            Desc:""
+        };
+
+        for (var i = 1; i < jsonCate.length; i++) {
+            cateHtm += "<tr>";
+            cateHtm += "<td>" + i + " ) </td>";
+            cateHtm += "<td>" + jsonCate[i].Desc + "</td>";
+            cateHtm += "<td>" + "<input type='text'   id="+i+"  size='45'/>" + "</td>";
+
+            cateHtm += "<td> <input type='button' name='btnNew' number=" +i+ "  value='新建任务'/></td>";
+            cateHtm += "</tr>";
+        }
+
+        $("#tbc").append(cateHtm);
+        $("input[name='btnNew']").click(function (i) {
+            var id = $(this).attr("number");
+            jsonTask.EntranceURL = $("#" + id).val();
+            jsonTask.Category = jsonCate[id].Category;
+            jsonTask.Desc = jsonCate[id].Desc;
+            var result = window.external.addJsonTask(JSON.stringify(jsonTask));
+            if (result > 0)
+                $("#" + id).val("");
+        });
+    </script>
+</body>
+</html>

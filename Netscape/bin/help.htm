@@ -1,0 +1,66 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+    <title></title>
+    <script src="jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script src="mcate.js" type="text/javascript"></script>
+    <link href="netpage.css" rel="stylesheet" type="text/css" />
+ <style type="text/css">
+     #tbc td {
+         vertical-align:middle;
+     }
+ </style>
+</head>
+<body>
+    <form id="form1"  >
+        <br />
+        <div style="padding: 5px 5px 5px 5px; display: ;" id="divKssOffice">
+            <div id="divTitle" class="testimonial">
+                 《金速探索》本产品为免费软件，有了您的<a href="http://www.easyfound.com.cn" target="_blank">支持</a>我们才会做的更好
+                如有个人需求、意见改进、软件bug等问题，请给我们<a href="http://www.easyfound.com.cn/msgboard.aspx" target="_blank">留言</a>
+            </div>
+
+            <div class="testimonial" id="divBody" style="overflow-y: auto">
+                
+                <h3>    软件说明：</h3>
+    1) 该软件操作方便、简单容易上手，无复杂的逻辑操作，是您的收集助手<br/>
+    2)  新建任务：<b>名称</b>、<b>入口URL地址</b>、<b>保存路径</b><b>必须填写</b> 出现乱码请选择编码<br />
+    3) 如果360或防火墙提示为木马或病毒软件、请加入信任<br/>
+    4) 运行任务数量越多cpu资源占用比例越多，<b>不推荐全部运行所有程序</b>，每个任务线程数量根据系统资源调整<br />
+    5) 任务每隔3分钟存储一次，保存在下载文件夹中,<b>文件下载可限制大小并且单独保存提取地址。</b><br />
+    6) 压缩类型文件提取后的地址可作为备用，以便以后用下载工具批量下载<br/>
+
+    7) 优先级设置关于最先采集什么样<a href="http://baike.baidu.com/view/160611.htm"  target="blank">MIME</a>类型,
+    等级1-5 (由低到高)过滤器则跳过不需要采集的<a href="http://baike.baidu.com/view/160611.htm" target="blank">MIME</a>文件类型
+    （图片、文档、MP3只需简单设置，全部拿下）
+                    <br />                
+                <h3>配置文件说明：</h3>
+                使用的是Microsoft access 数据库,<br />               
+                Mime 表存放的是扩展名、分类名称等,如需要添加文件类型请在此添加<br />               
+                MCate Mime分类详细信息和Mime表的Category连接<br />               
+                其余均为系统运行所需，请不要修改表结构否则系统可能会崩溃<br />               
+                <br />
+            </div>
+            <div class="testimonial" id="divMessage" style="overflow-y: auto;display:none;">
+
+                发布人：<br />
+                <input id="txtUserName" name="txtUserName" type="text" maxlength="100"
+                       value="" />
+                <br />
+                个人需求、意见改进、软件bug等问题，请填写相关信息<br />
+                <textarea cols="60" rows="4" name="txtMsg" id="txtMsg"></textarea>
+                <br />
+                <input type="button" id="btnSubmit" value="提交我的留言" />
+
+            </div>
+        </div>
+    </form>
+ 
+     <script type="text/javascript">
+         document.oncontextmenu = new Function('event.returnValue=false');
+         document.onselectstart = new Function('event.returnValue=false;');
+
+     </script>
+</body>
+</html>

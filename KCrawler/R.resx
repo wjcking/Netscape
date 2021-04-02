@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CDetails_CrawledUrl" xml:space="preserve">
+    <value>提取总数：</value>
+  </data>
+  <data name="CDetails_Done" xml:space="preserve">
+    <value>执行完毕</value>
+  </data>
+  <data name="CDetails_DownloadFolder" xml:space="preserve">
+    <value>保存到：</value>
+  </data>
+  <data name="CDetails_EntranceURL" xml:space="preserve">
+    <value>入口地址：</value>
+  </data>
+  <data name="CDetails_FileTotals" xml:space="preserve">
+    <value>压缩文件类型个数：</value>
+  </data>
+  <data name="CDetails_Filter" xml:space="preserve">
+    <value>已过滤的类型</value>
+  </data>
+  <data name="CDetails_IsInternal" xml:space="preserve">
+    <value>只提取内部链接</value>
+  </data>
+  <data name="CDetails_Keywords" xml:space="preserve">
+    <value>内容包含关键字：</value>
+  </data>
+  <data name="CDetails_LogCount" xml:space="preserve">
+    <value>日志个数：</value>
+  </data>
+  <data name="CDetails_NotSave" xml:space="preserve">
+    <value>不保存文档，只提取链接</value>
+  </data>
+  <data name="CDetails_Priority" xml:space="preserve">
+    <value>提取优先级</value>
+  </data>
+  <data name="CDetails_QueueCount" xml:space="preserve">
+    <value>队列个数：</value>
+  </data>
+  <data name="CDetails_TaskDetail" xml:space="preserve">
+    <value>任务细节</value>
+  </data>
+  <data name="CDetails_TaskID" xml:space="preserve">
+    <value>任务编号：</value>
+  </data>
+  <data name="CDetails_TaskName" xml:space="preserve">
+    <value>任务名称：</value>
+  </data>
+  <data name="CDetails_Total" xml:space="preserve">
+    <value>优先级：{0} 过滤：{1} 地址关键字：{2} 内容关键字：{3}</value>
+  </data>
+  <data name="CDetails_Unicode" xml:space="preserve">
+    <value>编码：</value>
+  </data>
+  <data name="CDetails_UrlKeywords" xml:space="preserve">
+    <value>地址包含关键字：</value>
+  </data>
+  <data name="CrawlerSets_Filter" xml:space="preserve">
+    <value>已过滤：</value>
+  </data>
+  <data name="CrawlerSets_Internal" xml:space="preserve">
+    <value>仅内部链接</value>
+  </data>
+  <data name="CrawlerSets_Keywords" xml:space="preserve">
+    <value>关键字：</value>
+  </data>
+  <data name="CrawlerSets_NotSave" xml:space="preserve">
+    <value>不保存文件</value>
+  </data>
+  <data name="CrawlerSets_Priority" xml:space="preserve">
+    <value>优先级：</value>
+  </data>
+  <data name="CrawlerSets_UrlKeywords" xml:space="preserve">
+    <value>地址关键字：</value>
+  </data>
+  <data name="CrawlerStatusType_Fetch" xml:space="preserve">
+    <value>获取中</value>
+  </data>
+  <data name="CrawlerStatusType_Parse" xml:space="preserve">
+    <value>处理中</value>
+  </data>
+  <data name="CrawlerStatusType_Save" xml:space="preserve">
+    <value>保存中</value>
+  </data>
+  <data name="CrawlerStatusType_Sleep" xml:space="preserve">
+    <value>等待中</value>
+  </data>
+  <data name="DownloaderStatus_Pause" xml:space="preserve">
+    <value>暂停</value>
+  </data>
+  <data name="DownloaderStatus_Running" xml:space="preserve">
+    <value>运行</value>
+  </data>
+  <data name="DownloaderStatus_Stopped" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="Extract_Content" xml:space="preserve">
+    <value>内容</value>
+  </data>
+  <data name="Extract_Links" xml:space="preserve">
+    <value>链接</value>
+  </data>
+  <data name="Extract_Split_RegEx" xml:space="preserve">
+    <value>正则</value>
+  </data>
+  <data name="Extract_Split_StartLast" xml:space="preserve">
+    <value>前后</value>
+  </data>
+  <data name="Level_1" xml:space="preserve">
+    <value>低级：</value>
+  </data>
+  <data name="Level_2" xml:space="preserve">
+    <value>中低级：</value>
+  </data>
+  <data name="Level_3" xml:space="preserve">
+    <value>中级：</value>
+  </data>
+  <data name="Level_4" xml:space="preserve">
+    <value>中高级：</value>
+  </data>
+  <data name="Level_5" xml:space="preserve">
+    <value>最高级：</value>
+  </data>
+  <data name="Log_Error_FileInProgress" xml:space="preserve">
+    <value>另一个程序正在使用此文件，进程无法访问。</value>
+  </data>
+  <data name="Log_Error_NotExist" xml:space="preserve">
+    <value>文件不存在</value>
+  </data>
+  <data name="Log_Error_SocketException" xml:space="preserve">
+    <value>远程主机强迫关闭了一个现有的连接</value>
+  </data>
+  <data name="Log_Info_SavingQueue" xml:space="preserve">
+    <value>正在存储队列</value>
+  </data>
+  <data name="Log_Info_SavingUrl" xml:space="preserve">
+    <value>正在存储唯一URL</value>
+  </data>
+  <data name="MCate_Default" xml:space="preserve">
+    <value>默认设置（请到优先级选项卡自行设置）</value>
+  </data>
+  <data name="MCate_LabelPrefix" xml:space="preserve">
+    <value>系统自动生成关键字名称:</value>
+  </data>
+  <data name="Range_FileSize" xml:space="preserve">
+    <value>文件大小：</value>
+  </data>
+</root>

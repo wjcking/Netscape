@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{04EA0ED1-7F65-4A62-BB5D-DF01FA13194B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Netscape</RootNamespace>
+    <AssemblyName>Netscape</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>20141114110525893_easyicon_net_32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DockPanel, Version=2.2729.27328.903, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DockPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Net20, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Newtonsoft.Json.Net20.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Component\KeywordBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\KeywordBox.Designer.cs">
+      <DependentUpon>KeywordBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\MimeBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\MimeBox.Designer.cs">
+      <DependentUpon>MimeBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\UcContent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\UcContent.Designer.cs">
+      <DependentUpon>UcContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\UCFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\UCFilter.Designer.cs">
+      <DependentUpon>UCFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\UcExtract.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\UcExtract.Designer.cs">
+      <DependentUpon>UcExtract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wnd\AddExtractInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wnd\AddExtractInfo.Designer.cs">
+      <DependentUpon>AddExtractInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wnd\KGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wnd\KGeneral.Designer.cs">
+      <DependentUpon>KGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="R.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>R.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Component\DataGridAdvanced.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\DataGridAdvanced.designer.cs">
+      <DependentUpon>DataGridAdvanced.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\Link.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\Link.Designer.cs">
+      <DependentUpon>Link.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\StatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\StatusBar.Designer.cs">
+      <DependentUpon>StatusBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\TextboxAdvanced.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\TextboxAdvanced.designer.cs">
+      <DependentUpon>TextboxAdvanced.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\KCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\KCombo.Designer.cs">
+      <DependentUpon>KCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="R.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>R.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\UCHtmlKeywords.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\UCHtmlKeywords.Designer.cs">
+      <DependentUpon>UCHtmlKeywords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\UcUrlKeyword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\UcUrlKeyword.Designer.cs">
+      <DependentUpon>UcUrlKeyword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\UCCookies.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\UCCookies.Designer.cs">
+      <DependentUpon>UCCookies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\InteropPlus.cs" />
+    <Compile Include="Wnd\CDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wnd\CDetails.Designer.cs">
+      <DependentUpon>CDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wnd\CTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wnd\CTask.Designer.cs">
+      <DependentUpon>CTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wnd\KMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wnd\KMain.Designer.cs">
+      <DependentUpon>KMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ListViewAdvanced.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\ListViewAdvanced.Designer.cs">
+      <DependentUpon>ListViewAdvanced.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Wnd\ACrawler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wnd\ACrawler.Designer.cs">
+      <DependentUpon>ACrawler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\RichTextAdvanced.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\RichTextAdvanced.Designer.cs">
+      <DependentUpon>RichTextAdvanced.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wnd\StartWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wnd\StartWnd.Designer.cs">
+      <DependentUpon>StartWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Component\TaskContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\TaskContextMenu.Designer.cs">
+      <DependentUpon>TaskContextMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\UCPriority.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\UCPriority.Designer.cs">
+      <DependentUpon>UCPriority.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Content\UCBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Content\UCBase.Designer.cs">
+      <DependentUpon>UCBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\Task.cs" />
+    <Compile Include="Util\Constant.cs" />
+    <Compile Include="Util\Events.cs" />
+    <Compile Include="Util\IStatus.cs" />
+    <EmbeddedResource Include="Component\KeywordBox.resx">
+      <DependentUpon>KeywordBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\UcContent.resx">
+      <DependentUpon>UcContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\UCFilter.resx">
+      <DependentUpon>UCFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\UCHtmlKeywords.resx">
+      <DependentUpon>UCHtmlKeywords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\UcUrlKeyword.resx">
+      <DependentUpon>UcUrlKeyword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\UCCookies.resx">
+      <DependentUpon>UCCookies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\UcExtract.resx">
+      <DependentUpon>UcExtract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wnd\AddExtractInfo.resx">
+      <DependentUpon>AddExtractInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wnd\KGeneral.resx">
+      <DependentUpon>KGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wnd\ACrawler.en.resx">
+      <DependentUpon>ACrawler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\MimeBox.resx">
+      <DependentUpon>MimeBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>R.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>R.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\DataGridAdvanced.resx">
+      <DependentUpon>DataGridAdvanced.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\KCombo.resx">
+      <DependentUpon>KCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\Link.resx">
+      <DependentUpon>Link.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ListViewAdvanced.resx">
+      <DependentUpon>ListViewAdvanced.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\RichTextAdvanced.resx">
+      <DependentUpon>RichTextAdvanced.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\TextboxAdvanced.resx">
+      <DependentUpon>TextboxAdvanced.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wnd\CDetails.resx">
+      <DependentUpon>CDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wnd\CTask.resx">
+      <DependentUpon>CTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wnd\KMain.resx">
+      <DependentUpon>KMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Wnd\ACrawler.resx">
+      <DependentUpon>ACrawler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wnd\StartWnd.resx">
+      <DependentUpon>StartWnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\TaskContextMenu.resx">
+      <DependentUpon>TaskContextMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\UCPriority.resx">
+      <DependentUpon>UCPriority.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Content\UCBase.resx">
+      <DependentUpon>UCBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KCrawler\KCrawler.csproj">
+      <Project>{a4aee0d9-44d8-43df-96f8-0964eab6c2bd}</Project>
+      <Name>KCrawler</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="20141114110525893_easyicon_net_32.ico" />
+    <Content Include="bin\mime.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\RunTime32.dll" />
+    <Content Include="bin\RunTime64.dll" />
+    <Content Include="bin\help.htm" />
+    <Content Include="bin\Start.htm" />
+    <Content Include="Library\20141114110525893_easyicon_net_32.ico" />
+    <Content Include="Library\DockPanel.dll" />
+    <Content Include="Library\Newtonsoft.Json.Net20.dll" />
+    <Content Include="Resources\add.ico" />
+    <Content Include="Resources\bug.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

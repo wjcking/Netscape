@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<KSpider>
+  <Label6 ExtractType="1" SplitType="0">
+      <![CDATA[Apache Tomcat]]>
+    </Label6>
+
+    <Label2 ExtractType="1" SplitType="0">
+      <![CDATA[
+        //http://www.js.com/asdf
+        //http://js.com/adf
+        //ed2k://js/qwerwerwer|fasdfsf|
+        //thunder://js/werwerwer
+        //flashget://js/werwer
+        //ftp://js.com
+
+    ]]>
+    </Label2>
+
+    <测试字段 ExtractType="0" SplitType="0">
+      <![CDATA[http://www.w3.org/1999/xhtml]]>
+    </测试字段>
+</KSpider> 

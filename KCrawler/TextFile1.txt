@@ -1,0 +1,533 @@
+﻿
+     //修改调用  private static AddExtractInfo wndExtract;
+        internal void GetExtractWnd(ExtractOption option)
+        {
+            if (null == wndExtract)
+            {
+                wndExtract = new AddExtractInfo(option);
+                wndExtract.Show();
+            }
+            else
+            {
+                wndExtract.Activate();
+            }
+        }
+		public static int ExtractOptionLinks(ref string html)
+        {
+
+            int c = 0;
+            string restString;
+            KCrawler.ExtractOption option = new KCrawler.ExtractOption() { StartString = "</b>fjdsk;", LastString = "laf" };
+
+            option.ExtractedText = String.Empty;
+            int startIndex = html.IndexOf(option.StartString);
+            restString = html.Substring(option.StartString.Length + startIndex);
+
+            int lastIndex = restString.IndexOf(option.LastString);
+
+            option.ExtractedText = restString.Substring(0, lastIndex);
+            if (option.ExtractedText.Length > 0)
+                c++;
+            return c;
+        }
+
+		      string a = "asdfaslkdfjl<b>askdf;slkdfsa;k</b>fjdsk;阿斯顿发斯蒂芬laf";
+            ExtractOptionLinks(ref a);
+
+    public class DownloadInfo
+    {
+
+        public DateTime StartTime { get; set; }
+        public string SavePath { get; set; }
+        public string FileName
+        {
+
+            get {
+                try {
+                    return Path.GetFileName(UrlAddress);
+                }
+                catch
+                {
+                    return DateTime.Now.ToString(Constant.DateFormat) + ".RENAME";
+                }
+            }
+        }
+        public long FileSize { get; set; }
+        public string Speed { get; set; }
+        public string Progress { get; set; }
+        public string UrlAddress { get; set; }
+        public Uri Uri
+        {
+            get
+            {
+                if (String.IsNullOrEmpty(UrlAddress))
+                    return null;
+
+                return new Uri(UrlAddress);
+            }
+        }
+
+    }
+	//sql.Append(" AND Extension NOT IN");   //如果已经有了则不追加
+                //sql.AppendFormat("(SELECT Keywords FROM UrlKeyword WHERE KName='{0}' AND TaskID={1})", ti.Category,ti.ID);
+        public CrawlerSets()
+        {
+            if (string.IsNullOrEmpty(TaskID))
+                TaskID = "KSpider";
+        }
+        public CrawlerSets(string taskID)
+        {
+            if (!string.IsNullOrEmpty(taskID))
+                TaskID = taskID;
+            else
+                TaskID = "KSpider";
+            
+        }
+
+        public void RemoveTask(string taskID)
+        {
+            ini.EraseSection(taskID);
+        }
+        //及时获取section
+        public static List<string> TaskList
+        {
+            get
+            {
+                return ini.GetSectionList();
+            }
+        }
+        //爬虫配置文件
+        public static List<CrawlerSets> CrawlerSetList
+        {
+            get
+            {
+                List<CrawlerSets> list = new List<CrawlerSets>();
+                CrawlerSets cs;
+                foreach (string section in TaskList)
+                {
+                    cs = new CrawlerSets(section);
+                    list.Add(cs);
+                }
+                return list;
+            }
+        }
+        //判断是否存在该section
+        public static bool IsContainedSection(string taskID)
+        {
+            List<string> list = ini.GetSectionList();
+
+            return list.Exists(delegate(string s) { return s == taskID; });
+        }
+
+        public static string GetTitle(string html)
+        {
+            string title = Regex.Match(html, @"<title>(.*?)</title>", RegexOptions.IgnoreCase).Value;
+            return title.Replace("<title>", "").Replace("</title>", "");
+        }
+        public DataTable GetDataTable(string query)
+        {
+            IDataReader dataReader = ExecuteReader(query);
+            return ConvertDataReaderToDataTable(dataReader);
+        }
+
+        public static DataTable ConvertDataReaderToDataTable(IDataReader dataReader)
+        {
+            DataTable datatable = new DataTable();
+            DataTable schemaTable = dataReader.GetSchemaTable();
+            //动态添加列
+            foreach (DataRow myRow in schemaTable.Rows)
+            {
+                DataColumn myDataColumn = new DataColumn();
+                myDataColumn.DataType = (Type)myRow["DataType"];
+                myDataColumn.ColumnName = myRow["ColumnName"].ToString();
+                datatable.Columns.Add(myDataColumn);
+            }
+            //添加数据
+            while (dataReader.Read())
+            {
+                DataRow myDataRow = datatable.NewRow();
+                for (int i = 0; i < schemaTable.Rows.Count; i++)
+                {
+                    myDataRow[i] = dataReader[i];
+                }
+                datatable.Rows.Add(myDataRow);
+                myDataRow = null;
+            }
+            schemaTable = null;
+            return datatable;
+        }
+     public static List<PriorityInfo> GetPriority(int taskID)
+        {
+            lock (cache.SyncRoot)
+            {
+                string cacheName = CachePrefix + "GetPriority" + taskID.ToString();
+
+                if (cache.ContainsKey(cacheName))
+                    return cache[cacheName] as List<PriorityInfo>;
+                else
+                {
+                    List<PriorityInfo> list = PriorityFilterDao.GetPriority(taskID);
+                    cache.Add(cacheName, list);
+                    return list;
+                }
+            }
+        }
+        public static List<FilterInfo> GetFilter(int taskID)
+        {
+            lock (cache.SyncRoot)
+            {
+                string cacheName = CachePrefix + "GetFilter" + taskID.ToString();
+
+                if (cache.ContainsKey(cacheName))
+                    return cache[cacheName] as List<FilterInfo>;
+                else
+                {
+                    List<FilterInfo> list = PriorityFilterDao.GetFilter(taskID);
+                    cache.Add(cacheName, list);
+                    return list;
+                }
+            }
+        }
+        public static void Normalize(string baseUri, string currentURL, ref  string innerUri)
+        {
+
+            // 相对URL转换成绝对URL
+            if (innerUri.StartsWith("/"))
+            {
+                innerUri = baseUri + innerUri.Substring(1);
+            }
+
+            // 当查询字符串为空时去掉问号"?"
+            if (innerUri.EndsWith("?"))
+                innerUri = innerUri.Substring(0, innerUri.Length - 1);
+
+            // 删除默认端口号
+            // 解析路径
+            // 解码转义字符
+            try
+            {
+                Uri tempUri = new Uri(innerUri);
+                innerUri = tempUri.ToString();
+            }
+            catch (Exception e)
+            {
+                //写入url错误日志
+                StringBuilder error = new StringBuilder();
+                error.Append(e.Message).Append("\r\n");
+                error.Append(baseUri).Append(Environment.NewLine);
+                error.Append(currentURL).Append(Environment.NewLine);
+                error.Append(innerUri).Append(Environment.NewLine);
+                //     log = error.ToString() ;
+                //如果已经存在该地址的上级目录则退出
+                if (currentURL.IndexOf("./") > -1)
+                {
+                    innerUri = String.Empty;
+                    return;
+                }
+                //如果当前地址中有参数则截取
+                int qPos = currentURL.IndexOf("?");
+                if (qPos > 0)
+                    currentURL.Substring(0, qPos);
+
+                //如果是没有加HTTPS_PREFIX 这加上返回
+                if (currentURL.StartsWith("www"))
+                {
+                    currentURL = HTTP_PREFIX + currentURL;
+                    return;
+                }
+                //如果当前链接前缀是http或（s) 
+                string httpPrefix = HTTP_PREFIX;
+                if (currentURL.StartsWith(HTTP_PREFIX))
+                {
+                    httpPrefix = HTTP_PREFIX;
+                    currentURL = currentURL.Substring(HTTP_PREFIX.Length);
+                }
+                else if (currentURL.StartsWith(HTTPS_PREFIX))
+                {
+                    httpPrefix = HTTPS_PREFIX;
+                    currentURL = currentURL.Substring(HTTPS_PREFIX.Length);
+                }
+                int posLast = currentURL.LastIndexOf('/');
+
+                if (posLast > -1)
+                    currentURL = currentURL.Substring(0, posLast);
+                if (innerUri.EndsWith("/") || innerUri.EndsWith("?"))
+                    innerUri = httpPrefix + currentURL + innerUri;
+                else
+                    innerUri = httpPrefix + currentURL + "/" + innerUri;
+                //直接返回地址，下面的不在执行
+                return;
+
+            }
+            // 根目录添加斜杠
+            int posTailingSlash = innerUri.IndexOf("/", 8);
+            if (posTailingSlash == -1)
+                innerUri += '/';
+
+            // 猜测的目录添加尾部斜杠
+            if (posTailingSlash != -1 && !innerUri.EndsWith("/") && innerUri.IndexOf(".", posTailingSlash) == -1)
+                innerUri += '/';
+
+            // 删除分块
+            int posFragment = innerUri.IndexOf("#");
+            if (posFragment != -1)
+                innerUri = innerUri.Substring(0, posFragment);
+
+            // 删除缺省名字
+            foreach (string index in DefaultDirectoryIndexes)
+            {
+                if (innerUri.EndsWith(index))
+                {
+                    innerUri = innerUri.Substring(0, (innerUri.Length - index.Length));
+                    break;
+                }
+            }
+        }          string downloadedPath = Path.Combine(Downloader.CrawlerSets.DownloadFolder, "Files\\");
+                if (!Directory.Exists(downloadedPath))
+                    Directory.CreateDirectory(downloadedPath);
+         
+                    //WebClient client = new WebClient();
+
+                    //string fileName = Path.Combine(downloadedPath, Path.GetFileNameWithoutExtension(url) + extension);
+                    //client.DownloadFileAsync(new Uri(url), downloadedPath);
+                    //Downloader.WebClientList.Add(client);  
+                  // 如果扩展名存在Excel中，则取得优先级
+                bool hasQueuePriority = ExcelSetCache.GetPriority(Downloader.CrawlerSets.TaskID).Exists(delegate(PriorityInfo pi)
+                {
+                    if (link.ToLower().EndsWith(pi.Extension))
+                    {
+                        Downloader.UrlsQueueFrontier.Enqueue(link, pi.QueuePriority);
+                        return true; ;
+                    }
+                    return false;
+                });
+
+                //否则进入正常队列
+                if (!hasQueuePriority)
+                    Downloader.UrlsQueueFrontier.Enqueue(link);
+					
+					
+					     // 如果扩展名存在Excel中，则取得优先级
+                foreach (PriorityInfo pi in ExcelSetCache.GetPriority(Downloader.CrawlerSets.TaskID))
+                {
+                    if (link.EndsWith(pi.Extension))
+                    {
+                        Downloader.UrlsQueueFrontier.Enqueue(link, pi.QueuePriority);
+                        hasQueuePriority = true;
+                        break;
+                    }
+                }
+                //否则进入正常队列
+                if (!hasQueuePriority)
+                    Downloader.UrlsQueueFrontier.Enqueue(link);            
+        // 爬取历史是包含有时间戳的URL列表      
+       // public List<CrawleHistroyEntry> CrawleHistroy = new List<CrawleHistroyEntry>();
+        public long TotalSize { get; set; }
+        public object TotalSizelock = new object();
+		  /*
+        public double GetDownloadSpeed()
+        {
+            long totalSize = 0;
+            DateTime now = DateTime.UtcNow;
+            int window = 15; // seconds
+            lock (CrawleHistroy)
+            {
+                for (int i = CrawleHistroy.Count - 1; i >= 0; i--)
+                {
+                    CrawleHistroyEntry entry = CrawleHistroy[i];
+                    if ((now - entry.Timestamp) <= TimeSpan.FromSeconds(window))
+                        totalSize += entry.Size;
+                    else
+                        break;
+                }
+            }
+
+            double speed = 1.0 * totalSize / window / 1024;
+            return speed;
+        }
+        */ 
+ 
+                //bool isUrlExists = Downloader.CrawledUrlSet.Exists(delegate(string lk) { return lk == url; });
+                //bool isFileExists = Downloader.StreamFile.Exists(delegate(string lk) { return lk == url; });
+
+                ////[Fitler]如果链接存在则退出
+                //if (isUrlExists)
+                //    return;
+                ////[Fitler]如果是文件类型存在则退出
+                //if (isFileExists)
+                //    return;
+
+                //   Downloader.CrawleHistroy.Add(new CrawleHistroyEntry() { Timestamp = DateTime.UtcNow, Url = url, Size = response.ContentLength });
+
+                //下载大小，线程锁定
+                //lock (crawler.Downloader.TotalSizelock)
+                //{
+                //    crawler.Downloader.TotalSize += response.ContentLength;
+                //}      //HtmlDocument document = new HtmlDocument();
+                //document.LoadHtml(html);
+                //HtmlNodeCollection links = document.DocumentNode.SelectNodes("//attribute::*[@href]");
+                //HtmlNodeCollection srcs = document.DocumentNode.SelectNodes("//attribute::*[@src]"); 
+
+                //foreach(HtmlNode n in links)
+                //{
+                //    string href = n.Attributes["href"].Value.Trim('"', '\'', '#', ' ', '>');
+
+                //    if (IsGoodUri(href))
+                //        urls.Add(href);
+                //}
+
+				        /// <summary>
+        /// foamliu, 2009/12/27.
+        /// 爬虫需要两个URL是否指向相同的页面这一点可以被迅速检测出来, 这就需要URL规范化.
+        /// URL规范化做的主要的事情:
+        /// 转换为小写
+        /// 相对URL转换成绝对URL
+        /// 删除默认端口号
+        /// 根目录添加斜杠
+        /// 猜测的目录添加尾部斜杠
+        /// 删除分块
+        /// 解析路径
+        /// 删除缺省名字
+        /// 解码禁用字符
+        /// 
+        /// 更多信息参照RFC3986:
+        /// http://tools.ietf.org/html/rfc3986
+        /// </summary>
+        /// <param name="baseUri"></param>
+        /// <param name="currentURL">当前要爬的地址</param>
+        /// <param name="innerUri">子地址</param>
+        public static void Normalize(string baseUri, string currentURL, ref  string innerUri )
+        {
+      
+            // 相对URL转换成绝对URL
+            if (innerUri.StartsWith("/"))
+            {
+                innerUri = baseUri + innerUri.Substring(1);
+            }
+
+            // 当查询字符串为空时去掉问号"?"
+            if (innerUri.EndsWith("?"))
+                innerUri = innerUri.Substring(0, innerUri.Length - 1);
+
+            // 删除默认端口号
+            // 解析路径
+            // 解码转义字符
+            try
+            {
+                Uri tempUri = new Uri(innerUri);
+                innerUri = tempUri.ToString();
+            }
+            catch (Exception e)
+            { 
+                //写入url错误日志
+                StringBuilder error = new StringBuilder();
+                error.Append(e.Message).Append("\r\n");
+                error.Append(baseUri).Append(Environment.NewLine);
+                error.Append(currentURL).Append(Environment.NewLine);
+                error.Append(innerUri).Append(Environment.NewLine);
+           //     log = error.ToString() ;
+                //如果已经存在该地址的上级目录则退出
+                if (currentURL.IndexOf("./") > -1)
+                {
+                    innerUri = String.Empty;
+                    return;
+                }
+                //如果当前地址中有参数则截取
+                int qPos = currentURL.IndexOf("?");
+                if (qPos > 0)
+                    currentURL.Substring(0, qPos);
+
+                //如果是没有加HTTPS_PREFIX 这加上返回
+                if (currentURL.StartsWith("www"))
+                {
+                    currentURL = HTTP_PREFIX + currentURL;
+                    return;
+                }
+                //如果当前链接前缀是http或（s) 
+                string httpPrefix = HTTP_PREFIX;
+                if (currentURL.StartsWith(HTTP_PREFIX))
+                {
+                    httpPrefix = HTTP_PREFIX;
+                    currentURL = currentURL.Substring(HTTP_PREFIX.Length);
+                }
+                else if (currentURL.StartsWith(HTTPS_PREFIX))
+                {
+                    httpPrefix = HTTPS_PREFIX;
+                    currentURL = currentURL.Substring(HTTPS_PREFIX.Length);
+                }
+                int posLast = currentURL.LastIndexOf('/');
+
+                if (posLast > -1)
+                    currentURL = currentURL.Substring(0,   posLast);
+                if (innerUri.EndsWith("/") || innerUri.EndsWith("?"))
+                    innerUri = httpPrefix + currentURL + innerUri;
+                else
+                    innerUri = httpPrefix + currentURL + "/" + innerUri;
+                //直接返回地址，下面的不在执行
+                return;
+
+            }
+            // 根目录添加斜杠
+            int posTailingSlash = innerUri.IndexOf("/", 8);
+            if (posTailingSlash == -1)
+                innerUri += '/';
+
+            // 猜测的目录添加尾部斜杠
+            if (posTailingSlash != -1 && !innerUri.EndsWith("/") && innerUri.IndexOf(".", posTailingSlash) == -1)
+                innerUri += '/';
+
+            // 删除分块
+            int posFragment = innerUri.IndexOf("#");
+            if (posFragment != -1)
+                innerUri = innerUri.Substring(0, posFragment);
+
+            // 删除缺省名字
+            foreach (string index in DefaultDirectoryIndexes)
+            {
+                if (innerUri.EndsWith(index))
+                {
+                    innerUri = innerUri.Substring(0, (innerUri.Length - index.Length));
+                    break;
+                }
+            }
+        }
+
+
+        //从流变成比特值
+        public static byte[] ReadInstreamIntoMemory(Stream stream)
+        {
+            int bufferSize = 16384;
+            byte[] mbuffer = new byte[bufferSize];
+            MemoryStream ms = new MemoryStream();
+            while (true)
+            {
+                int numBytesRead = stream.Read(mbuffer, 0, bufferSize);
+
+                if (numBytesRead <= 0)
+                    break;
+
+                ms.Write(mbuffer, 0, numBytesRead);
+            }
+            return ms.ToArray();
+        }
+                //foreach (HtmlNode n in srcs)
+                //{
+                //    string src = n.Attributes["src"].Value.Trim('"', '\'', '#', ' ', '>');
+
+                //    if (IsGoodUri(src))
+                //        urls.Add(src);
+                //}    
+				 //判断下载文件夹是否存在，否则的话会
+        public static bool IsExistedFolder(string downloadFolder)
+        {
+            List<string> list = ini.GetSectionList();
+            CrawlerSets cs;
+            foreach (string sec in list)
+            {
+                cs = new CrawlerSets(sec);
+                if (cs.DownloadFolder.Equals(downloadFolder))
+                    return true;
+            }
+
+            return false;
+        }

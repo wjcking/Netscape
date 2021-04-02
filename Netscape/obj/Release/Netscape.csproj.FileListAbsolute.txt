@@ -1,0 +1,73 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\bin\Netscape.exe
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\bin\Netscape.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\bin\en\Netscape.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\bin\DockPanel.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\bin\KCrawler.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\bin\KCrawler.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\bin\en\KCrawler.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.UCFilter.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.MimeBox.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.R.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.DataGridAdvanced.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.KCombo.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.Link.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.ListViewAdvanced.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.RichTextAdvanced.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.TextboxAdvanced.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.CDetails.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.CTask.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.KMain.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.Properties.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.ACrawler.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.StartWnd.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.TaskContextMenu.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.UCPriority.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.UCBase.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.ACrawler.en.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.R.en.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\en\Netscape.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.exe
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.pdb
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.exe
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.pdb
+E:\公司项目\Projects2013\Netscape\Netscape\bin\Netscape.exe
+E:\公司项目\Projects2013\Netscape\Netscape\bin\Netscape.pdb
+E:\公司项目\Projects2013\Netscape\Netscape\bin\en\Netscape.resources.dll
+E:\公司项目\Projects2013\Netscape\Netscape\bin\DockPanel.dll
+E:\公司项目\Projects2013\Netscape\Netscape\bin\KCrawler.dll
+E:\公司项目\Projects2013\Netscape\Netscape\bin\Aspose.Cells.dll
+E:\公司项目\Projects2013\Netscape\Netscape\bin\KCrawler.pdb
+E:\公司项目\Projects2013\Netscape\Netscape\bin\en\KCrawler.resources.dll
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.csprojResolveAssemblyReference.cache
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.UCFilter.resources
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.MimeBox.resources
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.R.resources
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.DataGridAdvanced.resources
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.KCombo.resources
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.Link.resources
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.ListViewAdvanced.resources
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.RichTextAdvanced.resources
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.TextboxAdvanced.resources
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.CDetails.resources
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.CTask.resources
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.KMain.resources
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.Properties.Resources.resources
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.ACrawler.resources
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.StartWnd.resources
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.TaskContextMenu.resources
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.UCPriority.resources
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.UCBase.resources
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.ACrawler.en.resources
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.R.en.resources
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\Netscape.csproj.GenerateResource.Cache
+E:\公司项目\Projects2013\Netscape\Netscape\obj\Release\en\Netscape.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\bin\bin\mime.mdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\bin\Newtonsoft.Json.Net20.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.KeywordBox.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.UCExtractSets.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.UCHtmlKeywords.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.UcUrlKeyword.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.UCCookies.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\Netscape\obj\Release\Netscape.KGeneral.resources

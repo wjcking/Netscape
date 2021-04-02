@@ -1,0 +1,25 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\bin\KCrawler.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\bin\KCrawler.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\bin\KCrawler.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\bin\en\KCrawler.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\bin\HtmlAgilityPack.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\bin\RaisingStudio.Core.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\obj\x86\Release\KCrawler.R.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\obj\x86\Release\KCrawler.R.en.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\obj\x86\Release\KCrawler.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\obj\x86\Release\en\KCrawler.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\obj\x86\Release\KCrawler.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\obj\x86\Release\KCrawler.pdb
+E:\Netscape\KCrawler\bin\KCrawler.dll.config
+E:\Netscape\KCrawler\bin\KCrawler.dll
+E:\Netscape\KCrawler\bin\KCrawler.pdb
+E:\Netscape\KCrawler\bin\en\KCrawler.resources.dll
+E:\Netscape\KCrawler\bin\HtmlAgilityPack.dll
+E:\Netscape\KCrawler\bin\RaisingStudio.Core.dll
+E:\Netscape\KCrawler\obj\x86\Release\KCrawler.R.resources
+E:\Netscape\KCrawler\obj\x86\Release\KCrawler.R.en.resources
+E:\Netscape\KCrawler\obj\x86\Release\KCrawler.csproj.GenerateResource.Cache
+E:\Netscape\KCrawler\obj\x86\Release\en\KCrawler.resources.dll
+E:\Netscape\KCrawler\obj\x86\Release\KCrawler.dll
+E:\Netscape\KCrawler\obj\x86\Release\KCrawler.pdb
+E:\Netscape\KCrawler\obj\x86\Release\KCrawler.csprojResolveAssemblyReference.cache

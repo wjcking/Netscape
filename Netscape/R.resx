@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACrawer_NewTaskTitle" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="CDetails_CrawledUrl" xml:space="preserve">
+    <value>提取总数：</value>
+  </data>
+  <data name="CDetails_DownloadFolder" xml:space="preserve">
+    <value>保存到：</value>
+  </data>
+  <data name="CDetails_EntranceURL" xml:space="preserve">
+    <value>入口地址：</value>
+  </data>
+  <data name="CDetails_Keywords" xml:space="preserve">
+    <value>内容包含关键字</value>
+  </data>
+  <data name="CDetails_QueueCount" xml:space="preserve">
+    <value>队列个数：</value>
+  </data>
+  <data name="CDetails_Unicode" xml:space="preserve">
+    <value>编码：</value>
+  </data>
+  <data name="CDetails_UrlKeywords" xml:space="preserve">
+    <value>地址包含关键字：</value>
+  </data>
+  <data name="CTasK_AreOnlyLinks" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="CTask_ConfirmRemoveTask" xml:space="preserve">
+    <value>是否要删除任务（下载文件不会清除）？</value>
+  </data>
+  <data name="CTasK_IsInternal" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="Empty_TaskName" xml:space="preserve">
+    <value>请输入任务名称</value>
+  </data>
+  <data name="Empty_Url" xml:space="preserve">
+    <value>请提供入口URL地址,例如(http://www.google.com)</value>
+  </data>
+  <data name="URLStartPage" xml:space="preserve">
+    <value>Start.htm</value>
+  </data>
+  <data name="CrawlerStatusType_Fetch" xml:space="preserve">
+    <value>获取中</value>
+  </data>
+  <data name="CrawlerStatusType_Parse" xml:space="preserve">
+    <value>处理中</value>
+  </data>
+  <data name="CrawlerStatusType_Save" xml:space="preserve">
+    <value>保存中</value>
+  </data>
+  <data name="CrawlerStatusType_Sleep" xml:space="preserve">
+    <value>等待中</value>
+  </data>
+  <data name="DownloaderStatus_Pause" xml:space="preserve">
+    <value>暂停</value>
+  </data>
+  <data name="DownloaderStatus_Running" xml:space="preserve">
+    <value>运行</value>
+  </data>
+  <data name="DownloaderStatus_Stopped" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="ACrawer_EmptyDownloadFolder" xml:space="preserve">
+    <value>请选择下载保存文件夹路径</value>
+  </data>
+  <data name="KMain_Lunch" xml:space="preserve">
+    <value>所有任务已经启动</value>
+  </data>
+  <data name="KMain_Pause" xml:space="preserve">
+    <value>所有任务已经暂停</value>
+  </data>
+  <data name="KMain_Stop" xml:space="preserve">
+    <value>所有任务已经停止</value>
+  </data>
+  <data name="CTask_NullTaskSelected" xml:space="preserve">
+    <value>请选择一个任务</value>
+  </data>
+  <data name="ACrawler_NewlyAddedInfo" xml:space="preserve">
+    <value>任务添加完毕是否要配置其他项目（如优先级、过滤器等）？</value>
+  </data>
+  <data name="CDetails_Filter" xml:space="preserve">
+    <value>已过滤的类型</value>
+  </data>
+  <data name="CDetails_IsInternal" xml:space="preserve">
+    <value>只提取内部链接</value>
+  </data>
+  <data name="CDetails_NotSave" xml:space="preserve">
+    <value>不保存文档，只提取链接</value>
+  </data>
+  <data name="CDetails_Priority" xml:space="preserve">
+    <value>提取优先级</value>
+  </data>
+  <data name="CDetails_TaskID" xml:space="preserve">
+    <value>任务编号：</value>
+  </data>
+  <data name="CDetails_TaskName" xml:space="preserve">
+    <value>任务名称：</value>
+  </data>
+  <data name="CDetails_Done" xml:space="preserve">
+    <value>执行完毕</value>
+  </data>
+  <data name="KMain_Aborting" xml:space="preserve">
+    <value>正在结束任务请稍后......</value>
+  </data>
+  <data name="KMain_BallonWelcome" xml:space="preserve">
+    <value>欢迎您使用金蜘蛛 任务总数：</value>
+  </data>
+  <data name="CDetails_FileTotals" xml:space="preserve">
+    <value>压缩文件类型个数：</value>
+  </data>
+  <data name="CDetails_Total" xml:space="preserve">
+    <value>优先级：{0} 过滤：{1} 地址关键字：{2} 内容关键字：{3}</value>
+  </data>
+  <data name="CTask_ClearTask" xml:space="preserve">
+    <value>清除记录后则重新抓取，确定要清除：</value>
+  </data>
+  <data name="CrawlerSets_Filter" xml:space="preserve">
+    <value>已过滤：</value>
+  </data>
+  <data name="CrawlerSets_Keywords" xml:space="preserve">
+    <value>关键字：</value>
+  </data>
+  <data name="CrawlerSets_Priority" xml:space="preserve">
+    <value>优先级：</value>
+  </data>
+  <data name="CrawlerSets_UrlKeywords" xml:space="preserve">
+    <value>地址关键字：</value>
+  </data>
+  <data name="CDetails_TaskDetail" xml:space="preserve">
+    <value>任务细节</value>
+  </data>
+  <data name="CDetails_LogCount" xml:space="preserve">
+    <value>日志个数：</value>
+  </data>
+  <data name="CTask_StartingTask" xml:space="preserve">
+    <value>正在启动任务请稍后......</value>
+  </data>
+  <data name="KMain_Progressing" xml:space="preserve">
+    <value>执行中，请稍后......</value>
+  </data>
+  <data name="CTask_ExportedInfo" xml:space="preserve">
+    <value>导出完毕、是否打开下载目录？</value>
+  </data>
+  <data name="UcKey_EmptyKeyword" xml:space="preserve">
+    <value>请输入关键字</value>
+  </data>
+  <data name="UcKey_EmptyName" xml:space="preserve">
+    <value>请输入关键字标识名称</value>
+  </data>
+  <data name="EmptyInfo" xml:space="preserve">
+    <value>请输入相应信息</value>
+  </data>
+  <data name="ACrawler_DownloadFolderInfo" xml:space="preserve">
+    <value>保存路径，不填写则默认保存到：</value>
+  </data>
+  <data name="Error_WrongUrl" xml:space="preserve">
+    <value>请输入要获取资源的网址</value>
+  </data>
+  <data name="URLHelpPage" xml:space="preserve">
+    <value>help.htm</value>
+  </data>
+  <data name="KGen_Interval" xml:space="preserve">
+    <value>输出窗口时间间隔({0}毫秒):</value>
+  </data>
+  <data name="Dump_Type_Export" xml:space="preserve">
+    <value>导出日志</value>
+  </data>
+  <data name="URL_Requesting" xml:space="preserve">
+    <value>正在获取中，请稍候…………</value>
+  </data>
+</root>

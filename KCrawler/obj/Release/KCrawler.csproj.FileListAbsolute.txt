@@ -1,0 +1,25 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\bin\KCrawler.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\bin\KCrawler.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\bin\KCrawler.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\bin\en\KCrawler.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\bin\Aspose.Cells.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\bin\HtmlAgilityPack.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\obj\Release\KCrawler.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\obj\Release\KCrawler.R.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\obj\Release\KCrawler.R.en.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\obj\Release\KCrawler.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\obj\Release\en\KCrawler.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\obj\Release\KCrawler.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\Netscape\KCrawler\obj\Release\KCrawler.pdb
+E:\公司项目\Projects2013\Netscape\KCrawler\bin\KCrawler.dll.config
+E:\公司项目\Projects2013\Netscape\KCrawler\bin\KCrawler.dll
+E:\公司项目\Projects2013\Netscape\KCrawler\bin\KCrawler.pdb
+E:\公司项目\Projects2013\Netscape\KCrawler\bin\en\KCrawler.resources.dll
+E:\公司项目\Projects2013\Netscape\KCrawler\bin\Aspose.Cells.dll
+E:\公司项目\Projects2013\Netscape\KCrawler\bin\HtmlAgilityPack.dll
+E:\公司项目\Projects2013\Netscape\KCrawler\obj\Release\KCrawler.R.resources
+E:\公司项目\Projects2013\Netscape\KCrawler\obj\Release\KCrawler.R.en.resources
+E:\公司项目\Projects2013\Netscape\KCrawler\obj\Release\KCrawler.csproj.GenerateResource.Cache
+E:\公司项目\Projects2013\Netscape\KCrawler\obj\Release\en\KCrawler.resources.dll
+E:\公司项目\Projects2013\Netscape\KCrawler\obj\Release\KCrawler.dll
+E:\公司项目\Projects2013\Netscape\KCrawler\obj\Release\KCrawler.pdb
